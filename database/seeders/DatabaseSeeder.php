@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             UsuarioSeeder::class,
             CardapioSeeder::class,
             CategoriaSeeder::class,
+            IngredienteSeeder::class
         ]);
 
 
