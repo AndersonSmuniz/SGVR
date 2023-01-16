@@ -24,7 +24,8 @@ class DatabaseSeeder extends Seeder
             PedidoSeeder::class,
             CardapioSeeder::class,
             CategoriaSeeder::class,
-            ContaSeeder::class,
+            IngredienteSeeder::class,
+            ContaSeeder::class
         ]);
     }
 }
