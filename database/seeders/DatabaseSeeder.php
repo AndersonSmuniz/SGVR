@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
             PedidoSeeder::class,
             CardapioSeeder::class,
             CategoriaSeeder::class,
+            ContaSeeder::class,
+            ProdutoSeeder::class,
+            ItemPedidoSeeder::class
             IngredienteSeeder::class,
             ContaSeeder::class
         ]);
