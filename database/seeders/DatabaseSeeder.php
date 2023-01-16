@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Cardapio;
 use App\Models\Categorias;
+use App\Models\Preco;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
             CardapioSeeder::class,
             CategoriaSeeder::class,
             ContaSeeder::class,
+            PrecoSeeder::class
         ]);
 
 
