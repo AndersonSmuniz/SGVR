@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Pedido;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UsuarioSeeder extends Seeder
+class PedidoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,6 @@ class UsuarioSeeder extends Seeder
      */
     public function run()
     {
-
-        User::factory(1)->create();
-        User::factory(1)->create(['tipo_usuario_id'=>'2']);
-        
+        Pedido::factory(10)->create();
     }
 }
