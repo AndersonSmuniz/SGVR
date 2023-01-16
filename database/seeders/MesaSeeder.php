@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Mesa;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UsuarioSeeder extends Seeder
+class MesaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,9 @@ class UsuarioSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
+        for($i = 0; $i < 10; $i++)
+        {
+            Mesa::factory(1)->create(['numero' => $i+1]);
+        }
     }
 }

@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Reserva;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UsuarioSeeder extends Seeder
+class ReservaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class UsuarioSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
+        Reserva::factory(10)->create();
     }
 }
