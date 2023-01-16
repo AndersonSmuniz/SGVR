@@ -32,7 +32,9 @@ class DatabaseSeeder extends Seeder
             ItemPedidoSeeder::class,
             IngredienteSeeder::class,
             ContaSeeder::class,
-            Produto_CardapioSeeder::class
+            Produto_CardapioSeeder::class,
+            ProdutoIngredienteSeeder::class,
+
         ]);
     }
 }
