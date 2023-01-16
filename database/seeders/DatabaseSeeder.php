@@ -31,6 +31,8 @@ class DatabaseSeeder extends Seeder
             ItemPedidoSeeder::class,
             IngredienteSeeder::class,
             ContaSeeder::class,
+            ProdutoIngredienteSeeder::class
+
         ]);
     }
 }
