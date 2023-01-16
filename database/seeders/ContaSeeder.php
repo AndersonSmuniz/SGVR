@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Conta;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UsuarioSeeder extends Seeder
+class ContaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,8 @@ class UsuarioSeeder extends Seeder
      */
     public function run()
     {
+        Conta::factory(3)->create();
+        Conta::factory(2)->create(['status'=>'Fechada']);
 
-        User::factory(1)->create();
-        User::factory(1)->create(['tipo_usuario_id'=>'2']);
-        
     }
 }
