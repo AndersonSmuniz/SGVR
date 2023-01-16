@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             CardapioSeeder::class,
             CategoriaSeeder::class,
             ContaSeeder::class,
+            ProdutoSeeder::class,
         ]);
     }
 }
