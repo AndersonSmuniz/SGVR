@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             ContaSeeder::class,
             ProdutoSeeder::class,
             ItemPedidoSeeder::class
+            IngredienteSeeder::class,
+            ContaSeeder::class
         ]);
     }
 }
