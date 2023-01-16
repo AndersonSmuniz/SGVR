@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
             CategoriaSeeder::class,
             ContaSeeder::class,
             ProdutoSeeder::class,
-            ItemPedidoSeeder::class
+            ItemPedidoSeeder::class,
             IngredienteSeeder::class,
             ContaSeeder::class
         ]);
