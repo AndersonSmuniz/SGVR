@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('contas', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('reserva_id');
+            $table->foreignId('reserva_id')->constrained();
             $table->string('status');
             $table->integer('valor');
 

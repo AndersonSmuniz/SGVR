@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('precos', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('produto_id');
+            $table->foreignId('produto_id')->constrained();
             $table->integer('numero_pessoas');
             $table->integer('valor');
 

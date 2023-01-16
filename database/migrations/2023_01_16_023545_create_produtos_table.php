@@ -19,7 +19,7 @@ return new class extends Migration
 
             $table->string('status');
             $table->string('nome');
-            $table->foreignId('categoria_id');
+            $table->foreignId('categoria_id')->constrained();
         });
     }
 
