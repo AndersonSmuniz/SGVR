@@ -6,7 +6,6 @@ namespace Database\Seeders;
 use App\Models\Cardapio;
 use App\Models\Categorias;
 use App\Models\Preco;
-use App\Models\Produto_Cardapio;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -32,7 +31,7 @@ class DatabaseSeeder extends Seeder
             ItemPedidoSeeder::class,
             IngredienteSeeder::class,
             ContaSeeder::class,
-            Produto_CardapioSeeder::class,
+            ProdutoCardapioSeeder::class,
             ProdutoIngredienteSeeder::class,
 
         ]);

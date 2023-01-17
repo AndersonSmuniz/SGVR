@@ -6,9 +6,9 @@ use App\Models\Cardapio;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Produto_Cardapio>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\ProdutoCardapio>
  */
-class Produto_CardapioFactory extends Factory
+class ProdutoCardapioFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -20,7 +20,6 @@ class Produto_CardapioFactory extends Factory
         return [
             'cardapio_id'=>1,
             'produto_id'=>1,
-
         ];
     }
 }
