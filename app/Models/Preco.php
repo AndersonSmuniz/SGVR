@@ -13,4 +13,8 @@ class Preco extends Model
         'numeros_pessoas',
         'valor',
     ];
+
+    public function produto(){
+        return $this->belongsTo(Produto::class);
+    }
 }
