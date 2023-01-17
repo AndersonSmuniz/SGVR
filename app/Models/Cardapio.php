@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Cardapio extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'nome',
         'status',
@@ -17,5 +18,5 @@ class Cardapio extends Model
     public function produtos(){
         return $this->belongsToMany(Produto::class, ProdutoCardapio::class, 'cardapio_id');
     }
-    
+
 }

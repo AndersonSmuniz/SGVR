@@ -12,6 +12,9 @@ class Conta extends Model
         'reserva_id',
         'status',
         'valor',
-
     ];
+
+    public function reserva(){
+        return $this->belongsTo(Reserva::class);
+    }
 }

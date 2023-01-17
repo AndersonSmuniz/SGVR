@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Preco extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'produto_id',
         'numeros_pessoas',
