@@ -10,4 +10,6 @@ class ItemPedido extends Model
     use HasFactory;
 
     protected $fillable = ['status', 'observacao', 'pedido_id', 'produto_id'];
+
+
 }
