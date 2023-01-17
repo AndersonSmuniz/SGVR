@@ -25,4 +25,9 @@ class Reserva extends Model
     {
         return $this->hasOne(Conta::class);
     }
+
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::class);
+    }
 }
