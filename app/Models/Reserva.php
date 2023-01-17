@@ -10,4 +10,24 @@ class Reserva extends Model
     use HasFactory;
 
     protected $fillable = ['usuario_id', 'mesa_id', 'numero_pessoas', 'inicio'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function mesa()
+    {
+        return $this->belongsTo(Mesa::class);
+    }
+
+    public function conta()
+    {
+        return $this->hasOne(Conta::class);
+    }
+
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::class);
+    }
 }

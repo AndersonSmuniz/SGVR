@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Cardapio extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'nome',
         'status',
         'descricao',
     ];
+
+
 }
