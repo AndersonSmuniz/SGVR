@@ -16,10 +16,10 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        Categorias::factory(1)->create();
-        Categorias::factory(1)->create(['nome'=>'Peixe']);
-        Categorias::factory(1)->create(['nome'=>'Frango']);
-        Categorias::factory(1)->create(['nome'=>'Bebidas',
+        Categoria::factory(1)->create();
+        Categoria::factory(1)->create(['nome'=>'Peixe']);
+        Categoria::factory(1)->create(['nome'=>'Frango']);
+        Categoria::factory(1)->create(['nome'=>'Bebidas',
             'categoria_id'=>1]);
 
     }
