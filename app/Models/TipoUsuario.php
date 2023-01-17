@@ -11,4 +11,9 @@ class TipoUsuario extends Model
 
     protected $fillable = ['nome'];
 
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
+
 }
