@@ -20,4 +20,9 @@ class Reserva extends Model
     {
         return $this->belongsTo(Mesa::class);
     }
+
+    public function conta()
+    {
+        return $this->hasOne(Conta::class);
+    }
 }
