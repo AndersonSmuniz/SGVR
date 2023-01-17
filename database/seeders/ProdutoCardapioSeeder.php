@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Produto_Cardapio;
+use App\Models\ProdutoCardapio;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Produto_CardapioSeeder extends Seeder
+class ProdutoCardapioSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class Produto_CardapioSeeder extends Seeder
      */
     public function run()
     {
-        Produto_Cardapio::factory(10)->create();
+        ProdutoCardapio::factory(1)->create();
     }
 }

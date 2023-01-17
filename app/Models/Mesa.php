@@ -10,4 +10,8 @@ class Mesa extends Model
     use HasFactory;
 
     protected $fillable = ['ocupada', 'numero'];
+
+    public function reservas(){
+        return $this->hasMany(Reserva::class);
+    }
 }

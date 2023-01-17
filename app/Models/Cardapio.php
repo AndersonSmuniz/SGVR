@@ -15,5 +15,8 @@ class Cardapio extends Model
         'descricao',
     ];
 
+    public function produtos(){
+        return $this->belongsToMany(Produto::class, ProdutoCardapio::class, 'cardapio_id');
+    }
 
 }

@@ -13,4 +13,9 @@ class Ingrediente extends Model
         'nome',
         'status',
     ];
+
+    public function produtos(){
+        return $this->belongsToMany(Produto::class, ProdutoIngrediente::class, 'ingrediente_id');
+    }
+    
 }
