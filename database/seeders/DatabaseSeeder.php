@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Cardapio;
-use App\Models\Categorias;
+use App\Models\Categoria;
 use App\Models\Preco;
 use Illuminate\Database\Seeder;
 
