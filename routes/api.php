@@ -41,3 +41,10 @@ Route::prefix('mesa')->name('mesa.')->group(function (){
     Route::post('/{mesa_id}', [\App\Http\Controllers\Api\MesaController::class, 'update'])->name('update');
     Route::delete('/{mesa_id}', [\App\Http\Controllers\Api\MesaController::class, 'delete'])->name('delete');
 });
+Route::prefix('cardapio')->name('cardapio.')->group(function (){
+    Route::get('/', [\App\Http\Controllers\Api\CardapioController::class, 'index'])->name('index');
+    Route::post('/', [\App\Http\Controllers\Api\CardapioController::class, 'store'])->name('store');
+    Route::get('/{cardapio_id}', [\App\Http\Controllers\Api\CardapioController::class, 'show'])->name('show');
+    Route::post('/{cardapio_id}', [\App\Http\Controllers\Api\CardapioController::class, 'update'])->name('update');
+    Route::delete('/{cardapio_id}', [\App\Http\Controllers\Api\CardapioController::class, 'delete'])->name('delete');
+});
