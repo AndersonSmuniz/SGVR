@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('reserva_id')->constrained();
-            $table->string('status');
             $table->integer('valor');
 
             $table->timestamps();
