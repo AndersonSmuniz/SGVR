@@ -25,3 +25,11 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::post('/{user_id}', [\App\Http\Controllers\Api\UserController::class, 'update'])->name('update');
     Route::delete('/{user_id}', [\App\Http\Controllers\Api\UserController::class, 'delete'])->name('delete');
 });
+
+Route::prefix('categoria')->name('categoria.')->group(function () {
+    Route::get('/', [\App\Http\Controllers\Api\CategoriaController::class, 'index'])->name('index');
+    Route::post('/', [\App\Http\Controllers\Api\CategoriaController::class, 'store'])->name('store');
+    Route::get('/{user_id}', [\App\Http\Controllers\Api\CategoriaController::class, 'show'])->name('show');
+    Route::post('/{user_id}', [\App\Http\Controllers\Api\CategoriaController::class, 'update'])->name('update');
+    Route::delete('/{user_id}', [\App\Http\Controllers\Api\CategoriaController::class, 'delete'])->name('delete');
+});

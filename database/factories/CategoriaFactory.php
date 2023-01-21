@@ -18,8 +18,6 @@ class CategoriaFactory extends Factory
     {
         return [
             'nome' => 'carne',
-            'cardapio_id' => 1,
-
         ];
     }
 }
