@@ -20,7 +20,8 @@ class ReservaFactory extends Factory
             'user_id' => 1,
             'mesa_id' => 1,
             'numero_pessoas' => random_int(0, 10),
-            'inicio' => now()->addDays(random_int(0, 10))
+            'inicio' => now()->addDays(random_int(0, 10)),
+            'status' => 'Aberto'
         ];
     }
 }
