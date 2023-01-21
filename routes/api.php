@@ -56,3 +56,12 @@ Route::prefix('ingrediente')->name('ingrediente.')->group(function () {
     Route::post('/{ingrediente_id}', [\App\Http\Controllers\Api\IngredienteController::class, 'update'])->name('update');
     Route::delete('/{ingrediente_id}', [\App\Http\Controllers\Api\IngredienteController::class, 'delete'])->name('delete');
 });
+
+Route::prefix('produto')->name('produto.')->group(function (){
+    Route::get('/', [\App\Http\Controllers\Api\ProdutoController::class, 'index'])->name('index');
+    Route::post('/', [\App\Http\Controllers\Api\ProdutoController::class, 'store'])->name('store');
+    Route::get('/{produto_id}', [\App\Http\Controllers\Api\ProdutoController::class, 'show'])->name('show');
+    Route::post('/{produto_id}', [\App\Http\Controllers\Api\ProdutoController::class, 'update'])->name('update');
+    Route::delete('/{produto_id}', [\App\Http\Controllers\Api\ProdutoController::class, 'delete'])->name('delete');
+});
+
