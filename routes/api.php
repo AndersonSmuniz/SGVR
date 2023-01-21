@@ -48,6 +48,15 @@ Route::prefix('cardapio')->name('cardapio.')->group(function (){
     Route::post('/{cardapio_id}', [\App\Http\Controllers\Api\CardapioController::class, 'update'])->name('update');
     Route::delete('/{cardapio_id}', [\App\Http\Controllers\Api\CardapioController::class, 'delete'])->name('delete');
 });
+
+Route::prefix('ingrediente')->name('ingrediente.')->group(function () {
+    Route::get('/', [\App\Http\Controllers\Api\IngredienteController::class, 'index'])->name('index');
+    Route::get('/{ingrediente_id}', [\App\Http\Controllers\Api\IngredienteController::class, 'show'])->name('show');
+    Route::post('/', [\App\Http\Controllers\Api\IngredienteController::class, 'store'])->name('store');
+    Route::post('/{ingrediente_id}', [\App\Http\Controllers\Api\IngredienteController::class, 'update'])->name('update');
+    Route::delete('/{ingrediente_id}', [\App\Http\Controllers\Api\IngredienteController::class, 'delete'])->name('delete');
+});
+
 Route::prefix('produto')->name('produto.')->group(function (){
     Route::get('/', [\App\Http\Controllers\Api\ProdutoController::class, 'index'])->name('index');
     Route::post('/', [\App\Http\Controllers\Api\ProdutoController::class, 'store'])->name('store');
@@ -55,3 +64,4 @@ Route::prefix('produto')->name('produto.')->group(function (){
     Route::post('/{produto_id}', [\App\Http\Controllers\Api\ProdutoController::class, 'update'])->name('update');
     Route::delete('/{produto_id}', [\App\Http\Controllers\Api\ProdutoController::class, 'delete'])->name('delete');
 });
+
