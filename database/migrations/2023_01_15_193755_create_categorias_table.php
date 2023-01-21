@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
 
             $table->string('nome');
-            $table->foreignId('cardapio_id')->constrained();
             $table->foreignId('categoria_id')->nullable()->constrained();
 
             $table->timestamps();

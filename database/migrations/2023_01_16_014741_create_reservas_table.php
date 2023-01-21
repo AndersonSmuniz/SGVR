@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('mesa_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->integer('numero_pessoas');
+            $table->string('status');
             $table->date('inicio');
         });
     }

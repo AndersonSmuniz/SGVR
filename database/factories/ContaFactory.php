@@ -18,7 +18,6 @@ class ContaFactory extends Factory
     {
         return [
             'reserva_id' => 1,
-            'status' => 'Aberta',
             'valor' => random_int(10, 1000),
 
         ];

@@ -12,6 +12,7 @@ class Categoria extends Model
         'nome',
         'categoria_id',
     ];
+
     public function Categoria (){
         return $this->hasMany(Categoria::class);
     }

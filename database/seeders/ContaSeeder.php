@@ -16,7 +16,7 @@ class ContaSeeder extends Seeder
     public function run()
     {
         Conta::factory(3)->create();
-        Conta::factory(2)->create(['status'=>'Fechada']);
+        Conta::factory(2)->create();
 
     }
 }
